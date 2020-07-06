@@ -1,11 +1,8 @@
-drop table if exists products;
+drop table if exists Products;
 
-create table products (
+create table Products (
     product_id serial,
     name varchAR(350),
-    price integer
+    price integer,
+    image_url text
 );
-
-insert into products (name)
-    values
-    ('Soap');
